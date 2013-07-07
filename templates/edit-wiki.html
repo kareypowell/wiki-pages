@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <form method="post" novalidate="true">
+    <label>
+      <textarea id="blog-entry" name="content" required>{{page and page.content or ""}}</textarea>
+    </label>
+
+    <div class="error">{{error}}</div>
+
+    <br>
+    <button type="submit" class="btn btn-primary btn-large">Save</button>
+    <a href="{{path}}" class="btn btn-large">Cancel</a>
+  </form>
+{% endblock %}

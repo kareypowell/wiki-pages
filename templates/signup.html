@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Signup</h2>
+
+  <form class="form-horizontal" method="post" novalidate="true">
+    <div class="control-group">
+      <label class="control-label" for="username">Username</label>
+      <div class="controls">
+        <input type="text" placeholder="Enter Your Username" name="username" value="{{username}}" required>
+        <span class="help-inline error-msg">{{error_username}}</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" placeholder="Enter Password" name="password" value="" required>
+        <span class="help-inline error-msg">{{error_password}}</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password">Verify Password</label>
+      <div class="controls">
+        <input type="password" placeholder="Enter Password" name="verify" value="">
+        <span class="help-inline error-msg">{{error_verify}}</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password">Email (optional)</label>
+      <div class="controls">
+        <input type="text" placeholder="Enter Email" name="email" value="{{email}}">
+        <span class="help-inline error-msg">{{error_email}}</span>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <br>
+        <input type="submit" class="btn btn-large">
+      </div>
+    </div>
+  </form>
+
+{% endblock %}
