@@ -9,7 +9,7 @@ In order to get this project to run, you need to have Pyhton version 2.7 install
     $ mv app.example.yaml app.yaml
 
 Follow the instructions for the GAE SDK to get the project imported and how to run it and you're all set! Also, remember to review 
-the newly created `app.yaml` file and define your own **application** name and *SECRET_TOKEN*.
+the newly created `app.yaml` file and define your own **application** name and **SECRET_TOKEN**.
 
 ## License
 
